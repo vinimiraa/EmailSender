@@ -1,0 +1,2 @@
+# Library to read .env file
+python-dotenv
