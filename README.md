@@ -23,7 +23,7 @@ generate an App Password specifically for this application.
 
 1. **Clone the Repository**: Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/smtp-mail.git
+   https://github.com/vinimiraa/EmailSender.git
    cd smtp-mail
    ```
 
