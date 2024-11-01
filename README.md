@@ -24,7 +24,7 @@ generate an App Password specifically for this application.
 1. **Clone the Repository**: Clone this repository to your local machine.
    ```bash
    https://github.com/vinimiraa/EmailSender.git
-   cd smtp-mail
+   cd EmailSender
    ```
 
 2. **Install Dependencies**: Install required packages (if any).
@@ -194,16 +194,6 @@ email provider.
 - **SSL vs. TLS**: By default, `SmtpMail` uses TLS. Set `use_SSL=True` in the constructor to enable SSL, which may be 
 required for some servers.
 
-- **Error Handling**: The class includes basic error handling with print statements for attachment issues. For more 
-robust error handling, consider adding `try`/`except` blocks in `set_message()` and `send()` as needed.
-
-### Error Handling Recommendations
-
-- Use `try/except` when calling `connect()` and `send()` to handle SMTP exceptions more gracefully in production code.
-  
-This `SmtpMail` class provides an easy-to-use interface for sending emails with support for customization, attachments, 
-and multiple recipient types.
-
 ### Recommended Configurations and Best Practices
 
 #### 1. **Environment Variables for Sensitive Information**
@@ -254,6 +244,8 @@ any network/firewall restrictions that could prevent email sending. A simple cal
 For production environments, integrate logging and more advanced error handling to ensure any issues with the email 
 sending process are captured and can be debugged later. Consider using the `logging` library to capture connection 
 errors, recipient errors, and attachment issues.
+
+- Use `try/except` when calling `connect()` and `send()` to handle SMTP exceptions more gracefully in production code.
 
 **Example**:
 ```python
