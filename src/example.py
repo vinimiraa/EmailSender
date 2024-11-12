@@ -33,6 +33,9 @@ def main( ):
         attachment_paths= ["attachment.txt"]
     )
     
+    # Or you can add attachments separately
+    # smtp_mail.add_attachements( ["attachment.txt"] )
+
     # Set recipients
     smtp_mail.set_recipients(
         to= ["to_recipient@example.com"],
