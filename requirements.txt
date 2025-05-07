@@ -1,2 +1,4 @@
-# Library to read .env file
-python-dotenv
+dnspython==2.7.0
+email_validator==2.2.0
+idna==3.10
+python-dotenv==1.1.0
